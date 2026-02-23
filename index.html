@@ -740,7 +740,7 @@ footer {
   <div class="container" style="padding-top:0;padding-bottom:0;">
     <div class="stats-row reveal">
       <div class="stat-cell">
-        <div class="stat-num">7+</div>
+        <div class="stat-num">9+</div>
         <div class="stat-label">ML Projects</div>
       </div>
       <div class="stat-cell">
@@ -958,6 +958,42 @@ footer {
       <div class="project-card">
         <div class="project-card-top">
           <div class="project-number">PROJECT 004</div>
+          <div class="project-title">Agentic AI Chatbot &amp; News Summarization</div>
+          <div class="project-tech"><span class="tech-pill">LangGraph</span><span class="tech-pill">Groq LLM</span><span class="tech-pill">Tavily</span><span class="tech-pill">Streamlit</span></div>
+        </div>
+        <div class="project-card-body">
+          <p class="project-desc">LangGraph agent workflows with stateful memory architecture for conversational AI and real-time news summarization.</p>
+          <ul class="project-features">
+            <li>Agentic AI design with LangGraph</li>
+            <li>Multi-session context management</li>
+            <li>Real-time Tavily search tool integration</li>
+            <li>Groq LLM API for fast inference</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-number">PROJECT 005</div>
+          <div class="project-title">Conversational RAG with PDF</div>
+          <div class="project-tech"><span class="tech-pill">LangChain</span><span class="tech-pill">Groq API</span><span class="tech-pill">Chroma</span><span class="tech-pill">HuggingFace</span></div>
+        </div>
+        <div class="project-card-body">
+          <p class="project-desc">Enhanced RAG system for interactive, context-aware PDF querying with conversation history and semantic search.</p>
+          <ul class="project-features">
+            <li>PyPDFLoader + RecursiveCharacterTextSplitter pipeline</li>
+            <li>Chroma vector storage integration</li>
+            <li>History-aware retriever for context flow</li>
+            <li>HuggingFace embeddings for semantic search</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card">
+        <div class="project-card-top">
+          <div class="project-number">PROJECT 006</div>
           <div class="project-title">Student Performance Prediction</div>
           <div class="project-tech"><span class="tech-pill">ML</span><span class="tech-pill">Python</span><span class="tech-pill">Statistics</span></div>
         </div>
@@ -972,10 +1008,10 @@ footer {
         </div>
       </div>
 
-      <!-- Project 5 -->
+      <!-- Project 7 -->
       <div class="project-card">
         <div class="project-card-top">
-          <div class="project-number">PROJECT 005</div>
+          <div class="project-number">PROJECT 007</div>
           <div class="project-title">Pose Detection — MediaPipe</div>
           <div class="project-tech"><span class="tech-pill">OpenCV</span><span class="tech-pill">MediaPipe</span><span class="tech-pill">Blender</span></div>
         </div>
@@ -990,10 +1026,10 @@ footer {
         </div>
       </div>
 
-      <!-- Project 6 -->
+      <!-- Project 8 -->
       <div class="project-card">
         <div class="project-card-top">
-          <div class="project-number">PROJECT 006</div>
+          <div class="project-number">PROJECT 008</div>
           <div class="project-title">House Price Prediction</div>
           <div class="project-tech"><span class="tech-pill">Flask</span><span class="tech-pill">Full-Stack</span><span class="tech-pill">Regression</span></div>
         </div>
@@ -1095,7 +1131,7 @@ footer {
       <p class="cta-subtitle">I'm open to collaborations, internships, and opportunities in AI/ML engineering, data science, and research. Let's create something that matters.</p>
       <div class="cta-actions">
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shivanshu135.work@gmail.com" target="_blank" class="btn-primary">
-          <i class="fas fa-envelope"></i> shivanshu135.work@gmail.com
+          <i class="fas fa-envelope"></i> <span class="__cf_email__" data-cfemail="097a61607f68677a617c383a3c277e667b62496e64686065276a6664">[email&#160;protected]</span>
         </a>
         <a href="https://github.com/Chilliflex" target="_blank" class="btn-ghost">
           <i class="fab fa-github"></i> GitHub
@@ -1110,6 +1146,7 @@ footer {
   <div class="footer-left">© 2025 SHIVANSHU PANDEY · AI/ML ENGINEER · MUMBAI, IN</div>
   <div class="footer-links">
     <a href="https://github.com/Chilliflex" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/shivanshu-pandey-4b3879355" target="_blank"><i class="fab fa-linkedin"></i></a>
     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shivanshu135.work@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
   </div>
 </footer>
@@ -1117,7 +1154,7 @@ footer {
 <!-- Scroll to top -->
 <div id="scrollTop"><i class="fas fa-arrow-up"></i></div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ── CUSTOM CURSOR
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursor-ring');
@@ -1196,14 +1233,7 @@ function animateNum(el, target, suffix='') {
   step();
 }
 const statNums = document.querySelectorAll('.stat-num');
-const statTargets = [7, 9.20, 15, 3.6];
+const statTargets = [9, 9.20, 15, 3.6];
 const statSuffixes = ['+','','+',' ×'];
 const statObserver = new IntersectionObserver((entries) => {
-  entries.forEach((e,i) => {
-    if(e.isIntersecting){ animateNum(statNums[i], statTargets[i], statSuffixes[i]); }
-  });
-}, {threshold: 0.5});
-statNums.forEach(el => statObserver.observe(el));
-</script>
-</body>
-</html>
+  entries.
